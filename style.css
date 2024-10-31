@@ -1,0 +1,63 @@
+body
+{
+    padding: 0px;
+    margin: 0px;
+    background: url(images/photo-1605379399642-870262d3d051.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.member 
+{
+    width: 340px;
+    height: 320px;
+    background-color: black;
+}
+.membcont
+{
+    margin-top: 10%;
+    transition: transform 0.3s ease;
+}
+.membcont:hover 
+{
+    transform: scale(1.1);
+}
+.buttonstyle
+{
+    padding-top: 75px;
+    padding-right: 60px;
+    color: #B15960;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+}
+.buttonstyle:hover
+{
+    color: white;
+}
+.otherpro
+{
+    margin-left: 48.6%;
+    color:#B15960;
+    font-size: larger;
+}
+.otherpro:hover
+{
+    color: #7c3e44;
+}
+.cvbtn
+{
+    background-color:#B15960;
+    width: 6%;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 12px;
+    color: white;
+    border: 0;
+    height: 30px;
+}
+.cvbtn:hover
+{
+    background-color: #7c3e44;
+}

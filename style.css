@@ -313,6 +313,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.footicons{
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 40px;
+}
 /* Sidebar Styles */
 .sidebar {
     position: fixed;

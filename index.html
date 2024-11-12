@@ -1,127 +1,154 @@
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessica Mina Portfolio</title>
-    <div>
-        <nav id="homesec" style="display: flex;">
-            <img style="padding-top: 10px;padding-left: 65px;width: 10%;" src="images/jetrans.png" alt="logo">
-            <ul style="list-style-type: none;display: flex;padding-top: 86px;padding-left: 900px;">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="homesec">
+        <div class="nav-container">
+            <img class="logo" src="images/jetrans.png" alt="Logo">
+    
+            <!-- Sidebar Toggle Button -->
+            <span id="barsIcon" class="bars-icon">&#9776;</span>
+    
+            <!-- Standard Navigation Links (Hidden on Small Screens) -->
+            <ul class="nav-links">
                 <li><a class="buttonstyle" href="#homesec">Home</a></li>
                 <li><a class="buttonstyle" href="#aboutsec">About</a></li>
                 <li><a class="buttonstyle" href="#Portfoliosec">Portfolio</a></li>
                 <li><a class="buttonstyle" href="#contactsec">Contact</a></li>
             </ul>
-        </nav>
-        <div style="text-align: center;">
-            <div style="display: flex;margin-left: 42%;margin-top: 12%;">
-                <h1 style="color: white;font-size: 40px;">Hi, I'm</h1>
-                <h1 style="color: #B15960;margin-left: 10px;font-size: 40px;">Jessica Mina</h1>
+        </div>
+    </nav>
+    
+    <!-- Sidebar (Visible on Small Screens) -->
+    <div id="sidebar" class="sidebar">
+        <ul class="sidebar-links">
+            <li><a class="buttonstyle" href="#homesec">Home</a></li>
+            <li><a class="buttonstyle" href="#aboutsec">About</a></li>
+            <li><a class="buttonstyle" href="#Portfoliosec">Portfolio</a></li>
+            <li><a class="buttonstyle" href="#contactsec">Contact</a></li>
+        </ul>
+    </div>    
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm <span class="name">Jessica Mina</span></h1>
+            <p>I'm both a React Web and Flutter Developer</p>
+            <a href="flutter/JessicaMinaCV.pdf" target="_blank">
+                <button type="button" class="cvbtn">My CV</button>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="aboutsec" class="about">
+        <h1>About</h1>
+        <div class="members">
+            <div class="member">
+                <img src="images/git.jpg" alt="git Logo">
+                <h2>React Web Developer</h2>
             </div>
-            <div style="position: absolute;left: 0;right: 0;top: 49%;">
-                <p style="color: white;font-size: 30px;font-weight: bold;">I'm both react web and Flutter developer</p>
-                <a href="flutter/JessicaMinaCV.pdf" target="_blank"><button type="button" class="cvbtn">My CV</button></a>
+            <div class="member">
+                <img src="images/flutter.jpg" alt="Flutter Logo">
+                <h2>Flutter Developer and GDSC Flutter Team Member</h2>
+            </div>
+            <div class="member">
+                <img src="images/cyber.jpg" alt="Cyber Security">
+                <h2>GDSC Cyber Security Team Member</h2>
             </div>
         </div>
-    </div>
-</head>
-<body style="background-color: rgb(34, 34, 35);">
-        <div style="margin-top: 585px;"></div>
-        <div style="background-color: rgb(34, 34, 35);">
-            <br/>
-            <br/>
-            <!-- about -->
-            <div id="aboutsec"><h1 style="margin-left: 49%;color: white;">About</h1></div>
-            <div style="display: flex;">
-                <!-- git/web -->
-                <div class="member" style="margin-top:50px;text-align: center;margin-right: 20px;margin-left: 400px">
-                    <div class="membcont">
-                        <img style="width: 25%;margin-top: 40px;" src="images/git.jpg" alt="gitlogo">
-                        <h2 style="color: white;">React Web Developer</h2>
-                    </div>
-                </div>
-                
-                <!-- flutter -->
-                <div class="member" style="margin-top:50px;text-align: center;margin-right: 20px;">
-                    <div class="membcont">
-                        <img style="width: 25%;margin-top: 40px;" src="images/flutter.jpg" alt="flutterlogo">
-                        <h2 style="color: white;">Flutter Developer and GDSC Flutter Team Member</h2>
-                    </div>
-                </div>
-                <!-- cyber -->
-                <div class="member" style="margin-top:50px;text-align: center;">
-                    <div class="membcont">
-                        <img style="width: 50%;" src="images/cyber.jpg" alt="Cyber">
-                        <h2 style="color: white;">GDSC Cyber Security Team Member</h2>
-                    </div>
-                </div>
-                <br/>
-                <br/>
-                <br/>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="Portfoliosec" class="portfolio">
+        <h1>Portfolio</h1>
+        <h3>Web Projects</h3>
+        <div class="projects">
+            <div class="project">
+                <img src="images/fb.png" alt="Bakery Website">
+                <h2>Bakery Website</h2>
+                <a href="https://jessicamina263.github.io/Family-Bakery/" target="_blank">
+                    <button class="explore-btn">Explore</button>
+                </a>
+            </div>
+            <div class="project">
+                <img src="images/e-shop.png" alt="E-Shop Website">
+                <h2>E-Shop Website</h2>
+                <a href="https://jessicamina263.github.io/e-shop/" target="_blank">
+                    <button class="explore-btn">Explore</button>
+                </a>
+            </div>
+            <div class="project">
+                <img src="images/mn.png" alt="Movies News Website">
+                <h2>Movies News Website</h2>
+                <a href="https://jessicamina263.github.io/Movies-News/" target="_blank">
+                    <button class="explore-btn">Explore</button>
+                </a>
             </div>
         </div>
-        <!-- Portfolio -->
-        <div style="background-color: rgb(34, 34, 35);">
-            <br/>
-            <br/>
-            <div id="Portfoliosec"><h1 style="margin-left: 48%;color: white;">Portfolio</h1></div>
-            <h3 style="margin-left: 48.4%;color: white;">Web Project 1</h3>
-            <a class="otherpro" href="https://jessicamina263.github.io/Family-Bakery/" target="_blank">Bakery Website</a>
-            <a class="otherpro" href="https://jessicamina263.github.io/e-shop/" target="_blank">E-Shop Website</a>
-            <h3 style="margin-left: 48%;color: white;">Flutter Project 1</h3>
-            <div style="display: flex;margin-left: 400px;">
-                <img style="width: 350px;height: 700px;margin-top: 40px;margin-right: 20px;" src="flutter/2/main.png" alt="1" class="membcont">
-                <img style="width: 350px;height: 700px;margin-top: 40px;margin-right: 20px;" src="flutter/2/underweight.png" alt="2" class="membcont">
-                <img style="width: 350px;height: 700px;margin-top: 40px;" src="flutter/2/inshape.png" alt="3" class="membcont">
-            </div>
-            <div style="display: flex;margin-left: 400px;">
-                <img style="width: 350px;height: 700px;margin-top: 40px;margin-right: 20px;" src="flutter/2/overweight.png" alt="4" class="membcont">
-                <img style="width: 350px;height: 700px;margin-top: 40px;margin-right: 20px;" src="flutter/2/obese.png" alt="5" class="membcont">
-                <img style="width: 350px;height: 700px;margin-top: 40px;" src="flutter/2/errormsglearnmore.png" alt="6" class="membcont">
-            </div>
-            <br/>
-            <br/>
-            <h3 style="margin-left: 48%;color: white;">Flutter Project 2</h1>
-            <div style="display: flex;margin-left: 400px;">
-                <img style="width: 350px;height: 700px;margin-top: 40px;margin-right: 20px;" src="flutter/1/1.png" alt="1" class="membcont">
-                <img style="width: 350px;height: 700px;margin-top: 40px;margin-right: 20px;" src="flutter/1/2.png" alt="2" class="membcont">
-                <img style="width: 350px;height: 700px;margin-top: 40px;" src="flutter/1/3.png" alt="3" class="membcont">
-            </div>
-            <div style="display: flex;margin-left: 400px;">
-                <img style="width: 350px;height: 700px;margin-top: 40px;margin-right: 20px;" src="flutter/1/4.png" alt="4" class="membcont">
-                <img style="width: 350px;height: 700px;margin-top: 40px;margin-right: 20px;" src="flutter/1/5.png" alt="5" class="membcont">
-                <img style="width: 350px;height: 700px;margin-top: 40px;" src="flutter/1/6.png" alt="6" class="membcont">
-            </div>
-            <br/>
-            <br/>
+
+        <h3>Flutter Projects</h3>
+        <div class="flutter-projects">
+            <img src="flutter/2/main.png" alt="Flutter Project 1 - Main">
+            <img src="flutter/2/underweight.png" alt="Flutter Project 1 - Underweight">
+            <img src="flutter/2/inshape.png" alt="Flutter Project 1 - In Shape">
+            <img src="flutter/2/overweight.png" alt="Flutter Project 1 - Overweight">
+            <img src="flutter/2/obese.png" alt="Flutter Project 1 - Obese">
+            <img src="flutter/2/errormsglearnmore.png" alt="Flutter Project 1 - Error Message">
         </div>
-        <!-- Contact -->
-        <div style="background-color: rgb(34, 34, 35);">
-            <br/>
-                <div id="contactsec"><h1 style="margin-left: 48.5%;color: white;">Contact</h1></div>
-            <div style="text-align: center;">
-                <div>
-                    <label style="color:#B15960; font-weight: bold;font-size: large;" for="name">Name :</label>
-                    <input style="width: 250px;height: 25px;background-color: transparent;border-color: white;border-radius: 5px;margin-right: 20px;" name="name" type="text" id="name" placeholder="Name">
-        
-                    <label style="color:#B15960; font-weight: bold;font-size: large;" for="email">Email :</label>
-                    <input style="width: 250px;height: 25px;background-color: transparent;border-color: white;border-radius: 5px;" name="email" type="email" id="email" placeholder="Email">
-                </div>
-                <br/>
-                <label style="color:#B15960; font-weight: bold;font-size: large;" for="subject">Subject :</label>
-                <input style="width: 250px;height: 25px;background-color: transparent;border-color: white;border-radius: 5px;" name="subject" type="text" id="subject" placeholder="Subject">
-                
-                <br/>
-                <p style="color:#B15960; font-weight: bold;font-size: large;">Message :</p>
-                <textarea style="width: 600px;height: 250px;background-color: transparent;border-color: white;border-radius: 5px;" name="message" id="message" placeholder="Message" rows="10" cols="30"></textarea>
-            </div>
-            <button type="button" style="background-color:#B15960;width: 6%;text-align: center;font-size: medium;font-weight: bold;border-radius: 12px;color: white;border-color: #B15960;margin-left: 49%;margin-top: 20px">Send</button>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div style="margin-left: 40%;">
-                <img style="margin-left: 50px;" src="images/jetranswhite.png" alt="logolight">
-                <p style="margin-bottom: 100px;color: white;">Copyright 2024. All rights reserved by <a style="color: #B15960;" href="https://www.linkedin.com/in/jessica-mina-3048a628b/">Jessica Mina</a> .</p>
-                <br/>
-            </div>
+
+        <div class="flutter-projects">
+            <img src="flutter/1/1.png" alt="Flutter Project 2 - 1">
+            <img src="flutter/1/2.png" alt="Flutter Project 2 - 2">
+            <img src="flutter/1/3.png" alt="Flutter Project 2 - 3">
+            <img src="flutter/1/4.png" alt="Flutter Project 2 - 4">
+            <img src="flutter/1/5.png" alt="Flutter Project 2 - 5">
+            <img src="flutter/1/6.png" alt="Flutter Project 2 - 6">
         </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contactsec" class="contact">
+        <h1>Contact</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Name :</label>
+                <input name="name" type="text" id="name" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input name="email" type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject :</label>
+                <input name="subject" type="text" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea name="message" id="message" placeholder="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="send-btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="images/jetranswhite.png" alt="Logo Light">
+        <p>&copy; 2024. All rights reserved by <a href="https://www.linkedin.com/in/jessica-mina-3048a628b/" target="_blank">Jessica Mina</a>.</p>
+    </footer>
+
+    <!-- JavaScript to toggle sidebar -->
+    <script>
+        document.querySelector('.bars-icon').addEventListener('click', function () {
+            const sidebar = document.querySelector('.sidebar');
+            sidebar.classList.toggle('sidebar-visible');
+        });
+    </script>
 </body>
+</html>
